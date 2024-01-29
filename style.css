@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@600&family=Roboto&display=swap');
+
+/* ALL */
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #555555;
+}
+
+/* WRAPS BODY */
+.content-wrapper {
+    display: block;
+    margin: auto;
+    max-height: 1700px;
+    max-width: 1700px;
+}
+
+/* BODY */
+body {
+    background-color: white;
+}
+
+/* PAGE TITLE */
+h1 {
+    font-family: 'Grandstander', cursive;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+/* SEARCH BAR*/
+#pokemon-search-form {
+    text-align: center;
+}
+
+/*TYPE FILTER*/
+#pokemon-type-filter {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:black;
+}
+
+.form-spacers{
+    height: 10px;
+}
+
+.type-filter{
+    margin: 10px;;
+}
+
+#pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* flip card container  */
+
+.flip_card{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: aqua; */
+    gap: 2rem;
+}
+
+.single_card{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    height: 275px;
+    width: 200px;
+    margin: 20px;
+    gap: 2rem;
+    /* text-align: center; */
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* background-color: aqua; */
+
+}
+
+.flip_card:hover .single_card{
+
+    transform:rotateY(180deg)
+}
+
+.front_css, .back_css{
+    border-radius: 10px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+
+}
+
+.back_css{
+    transform: rotateY(180deg);
+}
+
+.p_css{
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 140px;
+    margin-top: -2rem;
+    
+}
+
+.frontimg_css{
+    padding: 0;
+    border: none;
+    margin: 0;
+    margin-top: -2rem;
+}
+
+.name_css{
+    text-transform: capitalize;
+    /* margin-top: -1rem; */
+}
+
+.span_css{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.Weight_css{
+    width: auto;
+    background-color: rgb(163, 225, 205);
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+}
+
+.typesname_css{
+    padding: 5px;
+    width: 4rem;
+    background-color: rgb(117, 117, 242);
+    text-align: center;
+    border-radius: 15px;
+}
+
+.backid_css{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: -8rem;
+}
+
+.backname_css{
+    margin-top: -.5rem;
+    text-transform: capitalize;
+}
+
+.height_css{
+    text-transform: capitalize;
+    border-radius: 15px;
+    background-color: red;
+    padding: 5px;
+}
+
+.Abilities_css{
+    margin:  0px;
+}
+
+.Abilities_css, p{
+    margin-top: 0px;
+}
+.fighting{
+    background-color: #a2ff02;
+}
+
+.grass{
+    background-color: #41ff0281;
+}
+
+.fire{
+    background-color: #ff0000a2;
+}
+
+.water{
+    background-color: #ddddca;
+}
+
+.bug{
+   background-color: #ff000079;
+}
+
+.normal{
+    background-color:#53f48b;
+}
+
+.poison{
+    background-color: #ff02b3;
+}
+
+.ground{
+    background-color: #0dfea635;
+}
+
+.electric{
+    background-color: #004cff61;
+}
+
+.fairy{
+    background-color: #b7001e;
+}
+
+.psychic{
+    background-color: #9a02ff;
+}
+
+.rock{
+    background-color: #01bfff;
+}
+
+.ghost{
+    background-color: #ff0202;
+}
+
+.ice{
+    background-color: #ad9ffd;
+}
+
+.dragon{
+    background-color: #3a3a41;
+}
