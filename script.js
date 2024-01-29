@@ -23,7 +23,7 @@ const fetchPokemon = () => {
     Promise.all(NumberOfCards)
     .then(allPokemon =>{
         const details = allPokemon.map(pokemon=>({
-            frontImage: pokemon.sprites['front_default'],
+            frontImage: pokemon.sprites.other.home.front_default,
             pokemon_id:pokemon.id,
             name:pokemon.name,
             type:pokemon.types[0].type.name,

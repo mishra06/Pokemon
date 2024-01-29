@@ -11,26 +11,27 @@
     <body>
         <div class="content-wrapper">
             <header>
-                <h1 data-aos="zoom-out-up">GeeksterMon</h1>
+                <!-- <h1 data-aos="zoom-out-up">GeeksterMon</h1> -->
+                <img data-aos="zoom-out-up" src="./pokemon-23.svg" alt="">
             </header>
             <main>
                 <form id="pokemon-type-filter">
                     <select name="type" class="type-filter">
                         <option value="">Types</option>
                     </select>
-                    <input type="submit" value="Filter by Type"/>
+                    <input class="typess" type="submit" value="Filter by Type"/>
                     
-                    <button onClick="window.location.reload();">Reset</button>
+                    <button class="resets" onClick="window.location.reload();">Reset</button>
                 </form>
                 <form id="pokemon-search-form" class="" action="" method="GET">
-                    <input id="pokemon-search-input" type="text" name="" placeholder="Enter Pokémon Name"/>
+                    <input class="enter" id="pokemon-search-input" type="text" name="" placeholder="Enter Pokemon Name"/>
                 </form>
                 <section class="form-spacers"></section>
                 <section id="pokedex">
                 </section>
             </main>  
         </div>
-        <script src="./script2.js"></script>
+        <script src="./script.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
